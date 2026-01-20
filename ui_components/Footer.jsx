@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 py-[60px] dark:bg-[#181A2A] dark:text-white">
+    <footer className="bg-gray-200 py-[30px] md:py-[60px] dark:bg-[#181A2A] dark:text-white">
       <div className="max-container">
         <div className="flex flex-col gap-y-[50px] md:grid md:grid-cols-2 md:gap-[50px] xl:flex xl:flex-row xl:justify-between">
           <div className="flex flex-col">

@@ -3,7 +3,7 @@ import React from "react";
 const MobileMenu = ({ mobilemenu }) => {
   return (
     <div
-      className={`min-h-[300px] fixed top-[80px] w-full z-30  bg-white dark:bg-[#141624]  duration-300 ${
+      className={`min-h-[300px] fixed top-[80px] w-full z-30  bg-white dark:bg-[#141624] dark:text-white  duration-300 ${
         mobilemenu ? "translate-y-[0]" : "translate-y-[-100%]"
       }`}
     >

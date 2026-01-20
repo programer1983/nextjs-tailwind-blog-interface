@@ -31,7 +31,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-50">
+      <header className="sticky top-0 z-50 bg-white  dark:bg-[#141624]">
         <div className="max-container flex justify-between items-center py-6 gap-6">
           <Link
             href="/"
@@ -54,7 +54,7 @@ const Header = () => {
                 <NavLinks href="#">Register</NavLinks>
               </li>
               <li className="font-semibold cursor-pointer">
-                <NavLinks href="#">Create Post</NavLinks>
+                <NavLinks href="/createpost">Create Post</NavLinks>
               </li>
             </ul>
           </nav>
