@@ -19,6 +19,9 @@ const BlogCards = () => {
       <div className="max-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[370_370_370] gap-[30px] justify-center">
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </section>
   );

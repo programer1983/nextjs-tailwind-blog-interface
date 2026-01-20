@@ -1,13 +1,17 @@
+"use client";
+
 import Image from "next/image";
 import cardImage from "@/images/design_vii.jpg";
 import { Button } from "@/components/ui/button";
 import userImage from "@/images/pic.jpg";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Card = () => {
+  const router = useRouter();
   return (
     <Link href={"/blogdetails/id"}>
-      <div className="flex flex-col items-center border-[2px] p-[20px] border-solid border-white rounded-lg dark:border-gray-600 shadow-md">
+      <div className="flex flex-col items-center border-[2px] p-[20px] border-solid border-white rounded-lg dark:border-gray-600 shadow-md hover:scale-105 duration-300">
         <div className="relative w-full h-[300px] mb-[15px]">
           <Image
             className="object-cover w-full h-full rounded-lg"
@@ -22,7 +26,15 @@ const Card = () => {
         <p className="block self-start text-[18px] font-medium text-black dark:text-white mb-[20px]">
           Build a Content Management Sysytem with Typescript and React.
         </p>
-        <div className="flex items-center gap-[20px] w-full">
+
+        <div
+          className="flex items-center gap-[20px] w-full"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            router.push("/profilepage/id");
+          }}
+        >
           <Image
             className="object-cover w-[40px] h-[40px] rounded-[50%]"
             src={userImage}

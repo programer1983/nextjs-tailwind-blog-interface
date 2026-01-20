@@ -45,16 +45,16 @@ const Header = () => {
                 <NavLinks href="/profilepage/id">Hi, Dimon</NavLinks>
               </li>
               <li className="cursor-pointer">
-                <NavLinks href="/logout">Logout</NavLinks>
+                <NavLinks href="#">Logout</NavLinks>
               </li>
               <li className="cursor-pointer">
-                <NavLinks href="/login">Login</NavLinks>
+                <NavLinks href="#">Login</NavLinks>
               </li>
               <li className="cursor-pointer">
-                <NavLinks href="/register">Register</NavLinks>
+                <NavLinks href="#">Register</NavLinks>
               </li>
               <li className="font-semibold cursor-pointer">
-                <NavLinks href="/create">Create Post</NavLinks>
+                <NavLinks href="#">Create Post</NavLinks>
               </li>
             </ul>
           </nav>
