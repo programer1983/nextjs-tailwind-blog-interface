@@ -1,8 +1,20 @@
 import Image from "next/image";
 import Card from "./Card";
 import burger from "@/images/burger.png";
+import desingImage from "@/images/design_vii.jpg";
+import noutbuck from "@/images/noutbuk.jpg";
+import server from "@/images/server.jpg";
+import ia from "@/images/ia.webp";
+import space from "@/images/space.jpg";
 
 const BlogCards = () => {
+  const images = [
+    { id: 1, image: desingImage },
+    { id: 2, image: noutbuck },
+    { id: 3, image: server },
+    { id: 4, image: ia },
+    { id: 5, image: space },
+  ];
   return (
     <section className="py-[50px] dark:bg-[#181A2A] dark:text-white">
       <div className="flex justify-center items-center gap-2 mb-[30px]">
@@ -17,11 +29,9 @@ const BlogCards = () => {
       </div>
 
       <div className="max-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[370_370_370] gap-[30px] justify-center">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {images.map((img) => (
+          <Card key={img.id} image={img.image} />
+        ))}
       </div>
     </section>
   );
